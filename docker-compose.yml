@@ -55,7 +55,7 @@ services:
       NETWORK: ${NBITCOIN_NETWORK:-regtest}
       API_TOKEN: ${CHARGED_API_TOKEN}
       LN_ALIAS: ${CHARGED_ALIAS}
-      LIGHTNINGD_OPT: "--bind-addr=127.0.0.1:9735 --announce-addr=${CHARGED_IP}"
+      LIGHTNINGD_OPT: "--bind-addr=0.0.0.0:9735 --announce-addr=lightning.satoshipay.com.au:9735"
       VIRTUAL_NETWORK: nginx-proxy
       VIRTUAL_PORT: 9112
       VIRTUAL_HOST: ${CHARGED_HOST}
